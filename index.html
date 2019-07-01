@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="https://cesiumjs.org/releases/1.58/Build/Cesium/Cesium.js"></script>
+    <link ref="stylesheet" href="./css/style.css">
+    <link href="https://cesiumjs.org/releases/1.58/Build/Cesium/Widgets/widgets.css" rel="stylesheet"/>
+
+    </head>
+    <body>
+    <div id="cesiumContainer"></div>
+    </body>
+
+    <script type="text/javascript" src="./js/3d-tiles.js"></script>
+    <script>
+        Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlMjc5MjdmNS05MjBjLTQ2MzEtOTQwOC1jNjVmMDA1MzlhODMiLCJpZCI6Mzk5Miwic2NvcGVzIjpbImFzciIsImdjIl0sImlhdCI6MTUzOTU4MDQ5N30.v1FiFQDcHTMyQJXxIPzxGkQYGIY6K2OAy6tRJjV57yY";
+
+        var viewer = new Cesium.Viewer('cesiumContainer', { terrainProvider: Cesium.createWorldTerrain()
+        });
+
+        
+    </script>
+</html>
